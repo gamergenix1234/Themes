@@ -1,12 +1,12 @@
 {
-"name": "Vinland Saga";
+"name": "Vinland Saga",
 "description": "VS theme with bg from Reddit";
 "authors": {
-"name": "TightCount";
-"id": "tightcount";
-};
+"name": "TightCount",
+"id": "tightcount",
+},
 "spec": 1;
 "background": {
 "url": "https://cdn.discordapp.com/attachments/906894277861339146/1288792512680431628/new-phone-wallpaper-reformatted-for-phone-by-ai-v0-rahkduti279b1.jpg?ex=66f6790f&is=66f5278f&hm=678f0ab6619604adee5bbffffa5afc57ecc6dcd86f0a8d841661053c9ccd5858&";
-};
+},
 }
