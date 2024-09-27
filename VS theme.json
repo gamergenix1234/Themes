@@ -1,113 +1,40 @@
 {
-"name": "Vinland Saga",
-"description": "VS theme with bg from Reddit",
-"authors": [
-  {
-   "name": "TightCount",
-   "id": "763457362493177877",
-  },
-],
-"semanticColors": { 
-  "HEADER_PRIMARY": [ 
-    "#EFDFD7" 
-  ], 
-  "HEADER_SECONDARY": [
-    "#EFDFD7" 
-  ], 
-  "TEXT_NORMAL": [
-    "#E7D6CE" 
-  ], 
-  "TEXT_MUTED": [
-    "#A07D6C"
-  ],
-  "INTERACTIVE_NORMAL": [ 
-    "#EFDFD7" 
-  ], 
-  "INTERACTIVE_HOVER": [
-    "#503E38"
-  ],
-  "INTERACTIVE_ACTIVE": [
-    "#EFDFD7"
-  ],
-  "INTERACTIVE_MUTED": [
-    "#957261"
-  ],
-  "BACKGROUND_PRIMARY": [
-    "#110D0A"
-  ],
-  "BACKGROUND_SECONDARY": [
-    "#15100d"
-  ],
-  "BACKGROUND_SECONDARY_ALT": [
-    "#15100d"
-  ],
-  "BACKGROUND_TERTIARY": [
-    "#110D0A"
-  ],
-  "BACKGROUND_ACCENT": [
-    "#503E38"
-  ],
-  "BACKGROUND_FLOATING": [
-    "#15100d"
-  ],
-   "BACKGROUND_MOBILE_PRIMARY": [
-     "#15100d"
-  ],
-   "BACKGROUND_MOBILE_SECONDARY": [
-     "#15100d"
-  ],
-   "BACKGROUND_NESTED_FLOATING": [
-     "#15100d"
-  ],
-       
-   "BACKGROUND_MESSAGE_HOVER": [
-     "#322720"
-  ],
-   "BACKGROUND_MODIFIER_HOVER": [
-     "#322720"
-  ],
-    "BACKGROUND_MODIFIER_ACTIVE": [
-      "#3a2c26"
-  ],
-    "BACKGROUND_MODIFIER_SELECTED": [
-      "#372d2b"
-  ],
-    "BACKGROUND_MODIFIER_ACCENT": [
-      "503E38"
-  ],
-    "SCROLLBAR_THIN_THUMB": [
-      "#26273b"
-  ],
-    "SCROLLBAR_THIN_TRACK": [
-      "transparent"
-  ],
-    "SCROLLBAR_AUTO_THUMB": [
-      "#DAC0B3"
-  ],
-    "SCROLLBAR_AUTO_TRACK": [
-      "#DAC0B3"
-  ],
-    "CHANNELTEXTAREA_BACKGROUND": [
-      "#372E29"
-  ],
-    "CHANNELS_DEFAULT": [
-      "#9E8376"
-  ],
-    "TEXT_LINK": [
-      "#9E8376"
-  ],
-    "TEXT_DANGER": [
-      "#503E38"
-  ],
-    "KEYBOARD": [
-      "#110D0A"
-  ],
-    "CHANNEL_ICON": [
-      "#EFDFD7"
-  ]
-    },
-"spec": 1,
-"background": {
-"url": "https://cdn.discordapp.com/attachments/906894277861339146/1288792512680431628/new-phone-wallpaper-reformatted-for-phone-by-ai-v0-rahkduti279b1.jpg?ex=66f6790f&is=66f5278f&hm=678f0ab6619604adee5bbffffa5afc57ecc6dcd86f0a8d841661053c9ccd5858&",
-},
+  /** Theme's name */
+  "name": string;
+  /** Theme's description */
+  "description": string;
+  /** Array of theme authors */
+  "authors": {
+    /** Author's nickname */
+    "name": "TightCount";
+    /** Author's Discord user ID */
+    "id": "763457362493177877";
+  }[];
+  /** Theme version (currently 2) */
+  spec: 2;
+  /** Object containing the semantic color recolorations */
+  semanticColors: {
+    /** Semantic key */
+    "HEADER_PRIMARY": string: [
+      /** Dark color */
+      string,
+      /** Light color */
+      string,
+      /** Amoled color */
+      string
+    ];
+  };
+  /** Object containing the raw color recolorations */
+  rawColors: {
+    [rawKey: string]: string;
+  };
+  /** Background that shows up in chat */
+  background: {
+    /** Determines the blurriness of the background (goes from 0-1) */
+    blur: number;
+    /** A link to the background */
+    url: string;
+    /** Determines the opacity of the background (goes from 0-1, affects color too) */
+    alpha: number;
+  };
 }
